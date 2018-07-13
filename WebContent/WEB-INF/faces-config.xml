@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faces-config xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd"
+	version="1.2">
+
+	<managed-bean>
+		<managed-bean-name>menuBacking</managed-bean-name>
+		<managed-bean-class>br.com.choice.lupa.backingbean.MenuBacking</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
+	<!-- REGRAS NAVEGAÇÃO MENU -->
+	<navigation-rule>
+		<navigation-case>
+			<from-action>#{menuBacking.primeiroExemplo}</from-action>
+			<to-view-id>/primeiroExemplo.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+
+		<navigation-case>
+			<from-action>#{menuBacking.segundoExemplo}</from-action>
+			<to-view-id>/segundoExemplo.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+
+		<navigation-case>
+			<from-action>#{menuBacking.terceiroExemplo}</from-action>
+			<to-view-id>/terceiroExemplo.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+
+		<navigation-case>
+			<from-action>#{menuBacking.quartoExemplo}</from-action>
+			<to-view-id>/quartoExemplo.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+
+		<navigation-case>
+			<from-action>#{menuBacking.quintoExemplo}</from-action>
+			<to-view-id>/quintoExemplo.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+
+		<navigation-case>
+			<from-action>#{menuBacking.sextoExemplo}</from-action>
+			<to-view-id>/sextoExemplo.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+	
+</faces-config>

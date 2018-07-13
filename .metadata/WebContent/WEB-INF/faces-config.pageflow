@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf139517291443820" configfile="/Lupa/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="*" x="122" y="1138" id="pf13951817570540" outlinks="pf139518190004812 pf139518190004813 pf139518190004814 pf139518190004815 pf139518190004816 pf139518190004817" path="*"/>
+  <nodes xsi:type="pageflow:PFPage" name="sextoExemplo" x="338" y="178" id="pf139518190004818" referenceLink="//@navigationRule.6/@fromViewId|" outlinks="pf139518349764024" inlinks="pf139518190004812" path="/sextoExemplo.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="quintoExemplo" x="338" y="562" id="pf139518190004819" referenceLink="//@navigationRule.5/@fromViewId|" outlinks="pf139518349764025" inlinks="pf139518190004813" path="/quintoExemplo.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="quartoExemplo" x="338" y="946" id="pf139518190004820" referenceLink="//@navigationRule.4/@fromViewId|" outlinks="pf139518349764026" inlinks="pf139518190004814" path="/quartoExemplo.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="terceiroExemplo" x="338" y="1330" id="pf139518190004821" referenceLink="//@navigationRule.3/@fromViewId|" outlinks="pf139518349764027" inlinks="pf139518190004815" path="/terceiroExemplo.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="segundoExemplo" x="338" y="1714" id="pf139518190004822" referenceLink="//@navigationRule.2/@fromViewId|" outlinks="pf139518349764028" inlinks="pf139518190004816" path="/segundoExemplo.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="primeiroExemplo" x="338" y="2098" id="pf139518190004823" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf139518349764029" inlinks="pf139518190004817" path="/primeiroExemplo.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="index" x="554" y="1138" id="pf139518349764030" referenceLink="//@navigationRule.6/@navigationCase.0/@toViewId|" inlinks="pf139518349764029 pf139518349764028 pf139518349764027 pf139518349764026 pf139518349764025 pf139518349764024" path="/index.jsp"/>
+  <links id="pf139518190004812" target="pf139518190004818" source="pf13951817570540" redirect="true" fromaction="#{menuBacking.sextoExemplo}"/>
+  <links id="pf139518190004813" target="pf139518190004819" source="pf13951817570540" redirect="true" fromaction="#{menuBacking.quintoExemplo}"/>
+  <links id="pf139518190004814" target="pf139518190004820" source="pf13951817570540" redirect="true" fromaction="#{menuBacking.quartoExemplo}"/>
+  <links id="pf139518190004815" target="pf139518190004821" source="pf13951817570540" redirect="true" fromaction="#{menuBacking.terceiroExemplo}"/>
+  <links id="pf139518190004816" target="pf139518190004822" source="pf13951817570540" redirect="true" fromaction="#{menuBacking.segundoExemplo}"/>
+  <links id="pf139518190004817" target="pf139518190004823" source="pf13951817570540" redirect="true" fromaction="#{menuBacking.primeiroExemplo}"/>
+  <links id="pf139518349764029" target="pf139518349764030" source="pf139518190004823" outcome="voltar" redirect="true"/>
+  <links id="pf139518349764028" target="pf139518349764030" source="pf139518190004822" outcome="cancelar" redirect="true"/>
+  <links id="pf139518349764027" target="pf139518349764030" source="pf139518190004821" outcome="cancelar" redirect="true"/>
+  <links id="pf139518349764026" target="pf139518349764030" source="pf139518190004820" outcome="cancelar" redirect="true"/>
+  <links id="pf139518349764025" target="pf139518349764030" source="pf139518190004819" outcome="cancelar" redirect="true"/>
+  <links id="pf139518349764024" target="pf139518349764030" source="pf139518190004818" outcome="cancelar" redirect="true"/>
+</pageflow:Pageflow>
